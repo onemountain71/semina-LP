@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+/*スマホ用スタイル*/
+@media screen and (max-width: 767px) {
+
+  /*セクション間余白----------------------------------------------------------- */
+  section {
+    padding: 40px 0;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+
+  /*Header----------------------------------------------------------- */
+  header .logo {
+    padding-right: 20px;
+  }
+
+  .head_bm {
+    padding: 10px 0;
+  }
+
+  /*CTA----------------------------------------------------------- */
+  .cta {
+    padding: 35px 0;
+    overflow-y: hidden;
+  }
+
+  .cta h2 {
+    padding-bottom: 15px;
+  }
+
+/*arrow----------------------------------------------------------- */
+.arrow {
+  padding-top: 8%;
+}
+
+	
+/*sec01----------------------------------------------------------- */
+  .brett {
+    width: auto;
+  }
+
+  .brett ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .brett ul li img {
+    margin-right: 10px;
+    width: 20px;
+  }
+
+  /*sec02----------------------------------------------------------- */
+  .sec02 .box {
+    padding: 15px;
+    background-color: #eff6fb;
+    margin-bottom: 30px;
+  }
+
+  .sec02 .tit {
+    position: relative;
+    margin-top: -30px;
+    left: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .sec02 .brett ul li {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .sec02 .box02 .tit {
+    position: relative;
+    margin-top: -30px;
+    left: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .sec02 .txt {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .sec02 .box02 {
+    margin-bottom: 0;
+  }
+
+  /*sec03----------------------------------------------------------- */
+  .sec03 .tit {
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 15px;
+  }
+
+  .sec03 .txt .highlight {
+    font-size: 18px;
+  }
+
+  /*sec04----------------------------------------------------------- */
+  .sec04 .highlight {
+    font-size: 18px;
+  }
+
+  .sec04 .tit {
+    padding: 15px 0;
+  }
+
+  .sec04 .box {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+	
+  .sec04 .sec04_headline::after {
+     bottom: 10px; 
+}
+
+  /*sec05----------------------------------------------------------- */
+  .sec05 h2{
+	line-height: 1.4;		
+  }
+  .sec05 .inner {
+    padding: 5px;
+  }
+
+  .sec05 .box {
+    padding: 15px;
+  }
+
+  /*sec06----------------------------------------------------------- */
+  .qa .icon {
+    width: 30px;
+    flex-shrink: 0;
+  }
+
+  .qa .q .box_item {
+    align-items: flex-start;
+  }
+
+  /*sec07----------------------------------------------------------- */
+  .sec07 .box {
+    padding: 15px 30px;
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .sec07 .box:before {
+    height: 2px;
+  }
+
+  .sec07 .box:after {
+    width: 2px;
+  }
+
+  .sec07 .box .txt_box:after {
+    width: 2px;
+  }
+
+  .sec07 .box .txt_box:before {
+    height: 2px;
+  }
+
+  /*form----------------------------------------------------------- */
+
+  form>ul>li {
+    padding: 15px;
+  }
+   table .box {
+        padding-top: 30px;
+    }
+	table td a{
+		padding: 15px;
+	}
+}
+
+/*スマホ用スタイルend*/

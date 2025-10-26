@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+/*タブレット用スタイル*/
+@media (min-width: 768px) and (max-width: 959px) {
+
+  /*セクション間余白-----------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+  }
+
+  footer {
+    padding: 30px 0;
+  }
+
+  /*MV-----------------------------------------------------------*/
+  .mv {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .mv .mv_txt img {
+    left: -35px;
+    width: 130%;
+  }
+
+  /*sec01-----------------------------------------------------------*/
+  .sec01 .white_box {
+    background-position: right -100px center;
+  }
+
+  .brett ul li {
+    font-size: 20px;
+  }
+
+  /*sec02-----------------------------------------------------------*/
+  .sec02 .brett ul li {
+    font-size: 20px;
+  }
+
+  .sec02 .txt {
+    font-size: 20px;
+  }
+
+  /*Footer----------------------------------------------------------- */
+  footer ul li {
+    margin: 0;
+  }
+
+  footer ul li a {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  footer ul li:first-child a {
+    padding-left: 0;
+  }
+
+}
+
+@media (min-width: 960px) and (max-width: 1080px) {
+
+  .gl-container,
+  .gl-header,
+  .gl-header .header-inner,
+  .gl-footer,
+  .gl-footer .area-inner {
+    width: 100%;
+  }
+
+}
+
+/*タブレット用スタイルend*/

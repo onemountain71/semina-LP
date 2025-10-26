@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+/* header */
+
+.gl-header {
+  position: sticky;
+  height: auto
+}
+
+.gl-header .header-inner {
+  height: 67px;
+  background: #fff
+}
+
+.gl-header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 67px;
+  background: #fff
+}
+
+.gl-header .header-inner {
+  display: flex;
+  width: 67.5rem;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap
+}
+
+.gl-header .header-inner h1 {
+  height: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .gl-header .header-inner {
+    width: 100%;
+  }
+}
+
+.gl-header .logo {
+  width: 210px;
+  margin: 0 0 0 15px;
+}
+
+.gl-header .logo>a {
+  position: relative;
+  display: block
+}
+
+.gl-header .logo>a>img,
+.gl-header .logo>a>picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.gl-header .pc-menu {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap
+}
+
+.gl-header .pc-menu>li {
+  height: 100%
+}
+
+.gl-header .pc-menu>li>a {
+  position: relative;
+  display: flex;
+  height: 100%;
+  padding: 0 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap
+}
+
+.gl-header .pc-menu>li>a:before {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  display: block;
+  width: 1px;
+  height: 30px;
+  content: '';
+  background: #b4b4b4
+}
+
+.gl-header .sp-menu-toggle {
+  display: none
+}
+
+.gl-header .sp-menu-modal {
+  display: none
+}
+
+@media (min-width:769px) {
+  .gl-header .logo>a {
+    transition: opacity .3s
+  }
+
+  .gl-header .logo>a:hover {
+    opacity: .7
+  }
+}
+
+@media (max-width:768px) {
+  .gl-header {
+    height: auto
+  }
+
+  .gl-header .header-inner {
+    position: relative;
+    height: 4.69333rem
+  }
+
+  .gl-header .sp-menu-modal {
+    position: absolute;
+    height: 100vh !important
+  }
+
+  .gl-header .sp-menu-modal .sp-menu {
+    padding: .68267rem 1.36533rem 13.22667rem
+  }
+
+  .gl-header {
+    width: 100%;
+    height: 4.69333rem
+  }
+
+  .gl-header .header-inner {
+    width: 100%
+  }
+
+  .gl-header .logo {
+    width: 11.136rem;
+    margin: 0 0 0 .85333rem;
+    height: 100%;
+    padding: 0;
+  }
+
+  .gl-header .logo>a {
+    display: block;
+    height: 100%;
+  }
+
+
+  .gl-header .logo>a>img,
+  .gl-header .logo>a>picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gl-header .pc-menu {
+    display: none
+  }
+
+  .gl-header .sp-menu-toggle {
+    display: block;
+    width: 4.69333rem;
+    height: 100%
+  }
+
+  .gl-header .sp-menu-toggle>a {
+    position: relative;
+    display: block;
+    height: 100%
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 1.19467rem 0 0;
+    transition: opacity .3s;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open .icon {
+    width: 2.34667rem;
+    height: 1.70667rem;
+    position: relative;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open .icon::before,
+  .gl-header .sp-menu-toggle>a .to-open .icon::after {
+    content: "";
+    position: absolute;
+    background-color: #004fa8;
+    width: 100%;
+    height: 0.2rem;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open .icon::before,
+  .gl-header .sp-menu-toggle>a .to-open .icon::after,
+  .gl-header .sp-menu-toggle>a .to-open .icon span {
+    content: "";
+    position: absolute;
+    background-color: #004fa8;
+    width: 100%;
+    height: 0.2rem;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open .icon::before {
+    top: 0;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open .icon span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open .icon::after {
+    bottom: 0;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-open .txt {
+    font-size: .93867rem;
+    line-height: 1em;
+    margin: .42667rem 0 0;
+    white-space: nowrap;
+    letter-spacing: 0
+  }
+
+  .gl-header .sp-menu-toggle>a .to-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .42667rem 0 0;
+    transition: opacity .3s;
+    opacity: 0;
+    background: #004fa8;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-close .icon {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-close .icon::before,
+  .gl-header .sp-menu-toggle>a .to-close .icon::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+  }
+
+  .gl-header .sp-menu-toggle>a .to-close .icon::before {
+    width: 100%;
+    height: 0.2rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .gl-header .sp-menu-toggle>a .to-close .icon::after {
+    width: 100%;
+    height: 0.2rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .gl-header .sp-menu-toggle>a .to-close .txt {
+    font-size: .93867rem;
+    line-height: 1em;
+    margin: .512rem 0 0;
+    white-space: nowrap;
+    color: #fff
+  }
+
+  .gl-header .sp-menu-toggle>a.isOpen .to-open {
+    pointer-events: none;
+    opacity: 0
+  }
+
+  .gl-header .sp-menu-toggle>a.isOpen .to-close {
+    pointer-events: auto;
+    opacity: 1
+  }
+
+  .gl-header .sp-menu-modal {
+    position: fixed;
+    top: 4.69333rem;
+    overflow-y: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0 4.69333rem;
+    background: #004fa8
+  }
+
+  .gl-header .sp-menu-modal .sp-menu {
+    padding: .68267rem 1.36533rem 2.64533rem
+  }
+
+  .gl-header .sp-menu-modal .sp-menu a {
+    color: #fff
+  }
+
+  .gl-header .sp-menu-modal .sp-menu>li {
+    margin: .55467rem 0 0
+  }
+
+  .gl-header .sp-menu-modal .sp-menu>li>a {
+    font-size: 1.10933rem;
+    line-height: 1em;
+    display: block;
+    padding: 1.10933rem;
+    letter-spacing: 0;
+    border-bottom: solid 1px #fff
+  }
+
+  .gl-header .sp-menu-modal .sp-menu>li>a.toggle {
+    position: relative
+  }
+}
